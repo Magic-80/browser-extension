@@ -17,7 +17,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch('/data/extensions.json')
+    fetch(import.meta.env.BASE_URL + 'data/config.json')
       .then((res) => res.json())
       .then((json) => setData(json));
   }, []);
@@ -65,7 +65,7 @@ function App() {
               <div className="extension_list_footer">
                 <button className="extension_button_remove" type="button"> Remove </button>
                 <label className="switch">
-                  <input type="checkbox"  />
+                  <input type="checkbox" />
                   <span className="slider round"></span>
                 </label>
               </div>
