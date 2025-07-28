@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Magic-80.github.io/browser-extension",
+  "homepage": "https://magic-80.github.io/browser-extension/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
