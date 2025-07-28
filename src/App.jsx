@@ -17,7 +17,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + 'data/config.json')
+    fetch(`${import.meta.env.BASE_URL}data/config.json`)
       .then((res) => res.json())
       .then((json) => setData(json));
   }, []);
